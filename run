@@ -1,1 +1,1 @@
-java -cp ./classes Jest
+java -cp /home/abhishek/Jest/out/production/Jest Jest.Jest

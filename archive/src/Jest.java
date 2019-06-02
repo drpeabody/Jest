@@ -10,7 +10,7 @@ class Jest {
 	public static final String VERSION_MINOR = "1";
 
 	public static final String jsGetVersion() {
-		return "Jest v" + VERSION_MAJOR + "." + VERSION_MINOR;
+		return "Jest.Jest v" + VERSION_MAJOR + "." + VERSION_MINOR;
 	}
 
 	public static void jsLog(Object o[]){
