@@ -1,3 +1,1 @@
-cd src
-java Jest $1 $2 $3 $4
-
+java -cp ./classes Jest

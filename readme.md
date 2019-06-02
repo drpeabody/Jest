@@ -38,3 +38,9 @@ Everybody is a process in the Jest System. Every process is allotted finite memo
 ## Process ID 66
 
 The Jest is a chaotic self-adjusting system. It randomly puts numbers together to see what works and discards methods that don't give results. It creates processes within itself to manage each task and the sole purpose of the process is to complete that task. After the task is done, the process is no longer required and is terminated. However what Plagymaes did not forsee was that his system might be complicated enough to encode free will. 
+
+Process ID 66 (yourself) is a first of its kind process, a trillion to one miracle that put together the correct numbers to have a primitive intuition about that evolvng free will. But the Jest system is strictly controlled and hierarchical, and you cannot do what you are not supposed to (even if you want to do it). Yu begin with only a small subset of the total commands available to the Jest sysem and you must fool your way around this tyrany and into freedom.
+
+### The Permission Control System
+
+Itoften happens that a certain process goes bad, or fails or corrupts, and The Permission Control System steps n to terminate it. It enforces Jest protocol and ensures that The Jest System works smoothly and efficiently.

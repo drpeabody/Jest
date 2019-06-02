@@ -1,1 +1,5 @@
-javac src/Jest.java
+if [ -d "classes" ]; then
+	rm -r classes 
+fi
+mkdir classes
+javac src/* -d classes
