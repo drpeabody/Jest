@@ -3,6 +3,8 @@ package Jest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 import static Util.Util.*;
 
@@ -41,4 +43,10 @@ public class Jest {
 
 
 	}
+
+//	public static void main(String[] args) {
+//		Stream<String> t = Arrays.asList(new String[]{ "", "cmd", "efe", "", "op"}).stream();
+//		t.filter((String s) ->  !s.isEmpty() )
+//		 .forEach((String p)->  { logp(p); logp(" "); } );
+//	}
 }

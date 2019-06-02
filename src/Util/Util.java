@@ -1,5 +1,7 @@
 package Util;
 
+import java.util.Arrays;
+
 /**
  * @author Abhishek
  * @since 02 Jun, 2019
@@ -45,5 +47,12 @@ public class Util {
     }
     public static void logp(Object var0) {
         System.out.print(var0.toString());
+    }
+
+    public static String[] cleanCommand(String a){
+        return Arrays.stream(a.split(" "))
+                .filter( s -> !s.isEmpty() )
+                .map( s -> s.toLowerCase() )
+                .toArray(s -> new String[s] );
     }
 }

@@ -1,9 +1,8 @@
 package Jest;
 
-import java.util.Collection;
+import Util.Command;
+
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 import static Util.Util.*;
 
@@ -17,18 +16,18 @@ import static Util.Util.*;
 
 public class Player {
 
-    public final HashMap<String, Runnable> commands;
+    public final HashMap<String, Command> commands;
     public boolean gaming;
 
     public Player() {
         gaming = true;
-        commands = new HashMap<String, Runnable>();
+        commands = new HashMap();
         initComands();
     }
 
     public final void initComands(){
-        commands.put("kill", () -> { gaming = false; });
-        commands.put("uname", () -> { log(Jest.getVersion()); });
+        commands.put("kill", (args) -> { gaming = false; });
+        commands.put("uname", (args) -> { log(Jest.getVersion()); });
     }
 
     public boolean isGaming(){
@@ -37,8 +36,12 @@ public class Player {
 
     public void Do(String cmd){
 
-        if(commands.containsKey(cmd)){
-            commands.get(cmd).run();
+        String[] tokens = cleanCommand(cmd);
+
+        log(tokens);
+
+        if(commands.containsKey(tokens[0])){
+            commands.get(tokens[0]).execute(tokens);
         } else log("Unknown Command.");
     }
 
