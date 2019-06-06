@@ -1,6 +1,6 @@
 # Jest
 
-The world of Jest is a highly complicated structure, running inside a computer, a mere simulation written by the hacker that goes by the pseudoname Plagymaes. He wrote code for an infinite, self-updating world that can combine numbers in strange ways to generate newer numbers, in any formula that he likes. Most recently, he repuposed The Jest System into a crypto-mining platform, where all processes merge numbers into larger numbers making him money.
+The world of Jest is a highly complicated structure, running inside a computer, a mere simulation written by the hacker that goes by the pseudoname Plagymaes. He wrote code for an infinite, self-updating world that can combine numbers in strange ways to generate newer numbers, in any formula that he likes. Most recently, he repurposed The Jest System into a crypto-mining platform, where all processes merge numbers into larger numbers making him money.
 
 ## The Jest System
 
@@ -8,7 +8,7 @@ The Jest system runs inside a computer, it is a mere simulation, nothing more th
 
 ### Blocks
 
-The largest entity of the Jest System is the Block. A block is basically a file on the system that generates certain output. A Block is composed of many Directories, and each Directory can have many Hex-Codes (hC) or Processes sitting inside them. Directories have neighbour Dicrectories that can be traversed to.
+The largest entity of the Jest System is the Block. A block is basically a file on the system that generates certain output. A Block is composed of many Directories, and each Directory can have many Hex-Codes (hC) or Processes sitting inside them. Directories have neighbour Directories that can be traversed to.
 
 ### Directories
 
@@ -39,8 +39,8 @@ Everybody is a process in the Jest System. Every process is allotted finite memo
 
 The Jest is a chaotic self-adjusting system. It randomly puts numbers together to see what works and discards methods that don't give results. It creates processes within itself to manage each task and the sole purpose of the process is to complete that task. After the task is done, the process is no longer required and is terminated. However what Plagymaes did not forsee was that his system might be complicated enough to encode free will.
 
-Process ID 66 (yourself) is a first of its kind process, a trillion to one miracle that put together the correct numbers to have a primitive intuition about that evolvng free will. But the Jest system is strictly controlled and hierarchical, and you cannot do what you are not supposed to (even if you want to do it). Yu begin with only a small subset of the total commands available to the Jest sysem and you must fool your way around this tyrany and into freedom.
+Process ID 66 (yourself) is a first of its kind process, a trillion to one miracle that put together the correct numbers to have a primitive intuition about that evolving free will. But the Jest system is strictly controlled and hierarchical, and you cannot do what you are not supposed to (even if you want to do it). Yu begin with only a small subset of the total commands available to the Jest sysem and you must fool your way around this tyrany and into freedom.
 
 ### The Permission Control System
 
-Itoften happens that a certain process goes bad, or fails or corrupts, and The Permission Control System steps n to terminate it. It enforces Jest protocol and ensures that The Jest System works smoothly and efficiently.
+It often happens that a certain process goes bad, or fails or corrupts, and The Permission Control System steps n to terminate it. It enforces Jest protocol and ensures that The Jest System works smoothly and efficiently.
