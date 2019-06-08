@@ -1,6 +1,11 @@
 package Map;
 
-import java.util.ArrayList;
+import Util.Util;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
 
 /**
  * @author Abhishek
@@ -31,10 +36,72 @@ public class Map {
 
      */
 
-    private ArrayList<Block> blocks;
+    static final String[] nouns = {
+            "Table", "Chair", "Sky", "Earth", "Child"
+    };
+    static final String[] adjectives = {
+            "Small", "Big", "Dark", "Bright", "Normal"
+    };
+    static final String[] conjuncions = {
+            "and", "of", "in"
+    };
 
-    public Map() {
-        blocks = new ArrayList<>(2);
-        blocks.add(new Block.KernelBlock());
+
+
+    private Dir currDir;
+    private final long seed;
+
+    public Map(String seed){
+        this(seed.hashCode());
+    }
+
+    public Map(long seed) {
+        this.seed = seed;
+        currDir = new Dir(seed, 0, null, null);
+        currDir.generate(seed);
+    }
+
+    public void chageDir(int childIndex){
+        if(childIndex < 0 || childIndex > currDir.subdirs.length - 1){
+            return;
+        }
+        currDir = currDir.subdirs[childIndex];
+        currDir.generate(seed);
+    }
+
+    public void goUp(){
+        currDir = currDir.parent;
+        currDir.generate(seed);
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        Map m = new Map("Does this work?");
+
+        String input;
+
+        do {
+            input = br.readLine();
+            switch (input){
+                case "exit":
+                    System.exit(0);
+                    break;
+                case "ls":
+                    System.out.println(m.currDir);
+                    break;
+                case "up":
+                    m.goUp();
+                    break;
+                case "mem":
+                    Util.log(Util.getMemUsage('m') + "MB");
+                default:
+                    String st[] = input.split(" ");
+                    if(st[0].equals("cd") && st.length > 1){
+                        m.chageDir(Integer.parseInt(st[1]));
+                    }
+            }
+        } while (true);
+
     }
 }
