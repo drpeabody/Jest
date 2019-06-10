@@ -57,7 +57,7 @@ public class Map {
 
     public Map(long seed) {
         this.seed = seed;
-        currDir = new Dir(seed, 0, null, null);
+        currDir = Dir.getNewDirectory(seed, 0);
         currDir.generate(seed);
     }
 

@@ -1,7 +1,6 @@
 package Jest;
 
 import Util.Screen;
-import Util.Util;
 
 import java.io.BufferedReader;
 import java.io.IOException;

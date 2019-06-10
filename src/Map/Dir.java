@@ -15,7 +15,7 @@ class Dir {
     Dir subdirs[];
     private boolean isGenerated;
 
-    Dir(long seed, int dirDescriptor, Dir parent, Dir child){
+    private Dir(long seed, int dirDescriptor, Dir parent, Dir child){
         // Only generates The name of this directory so Map can be lazy generated
         this.descriptor = dirDescriptor & 0x00ffffff;
         name = makeNewDirName(getRand(seed));
@@ -27,6 +27,10 @@ class Dir {
         else
             subdirs = new Dir[]{ child };
         isGenerated = false;
+    }
+
+    static Dir getNewDirectory(long seed, int descriptor){
+        return new Dir(seed, descriptor, null, null);
     }
 
     void generate(long seed){

@@ -19,7 +19,6 @@ public class Util {
         else res.append("\b]");
         return res.toString();
     }
-
     public static String str(Object[] var0){
         String res = "[ ";
         for(int i = 0; i < var0.length - 1; ++i) {
@@ -32,6 +31,7 @@ public class Util {
             return res.concat("\b]");
         }
     }
+
     public static void log(Object[] var0) {
         System.out.println(str(var0));
     }
